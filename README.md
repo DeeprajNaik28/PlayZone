@@ -26,7 +26,7 @@ This project includes basic user account and game listings with a clean and inte
 
 ## 📂 Project Purpose
 
-This project was created as a demo/prototype of an online digital game store.
+This project was created as a demo of an online digital game store.
 It focuses mainly on frontend design, layout structure, and basic interactive features.
 
 ---
@@ -35,7 +35,7 @@ It focuses mainly on frontend design, layout structure, and basic interactive fe
 
 * Home page with featured games
 * Product listing section
-* Simple login/signup interface
+* Simple login interface
 * Interactive buttons and UI effects
 
 ---
@@ -44,7 +44,7 @@ It focuses mainly on frontend design, layout structure, and basic interactive fe
 
 1. Download or clone the repository
 2. Open the project folder
-3. Run the `index.html` file in your browser
+3. Run the `.html` files in your browser
 
 ---
 
@@ -57,19 +57,3 @@ It focuses mainly on frontend design, layout structure, and basic interactive fe
 * Game search and filters
 * Wishlist feature
 * User profiles and order history
-
----
-
-## 📄 License
-
-This project is made for educational and demo purposes only.
-
----
-
-## 👨‍💻 Author
-
-<<<<<<< HEAD
-Developed by Deepraj Naik
-=======
-Developed by Deepraj Naik
->>>>>>> 70cdf817d2d967c79dfb82ca9f8bd784986d72c0
