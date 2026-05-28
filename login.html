@@ -3,11 +3,12 @@
 
 <head>
 
+  <title>Login Page</title>
 
-  <link rel="stylesheet" href="home.html" />
-  <title>Login page</title>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Correct CSS Link -->
   <link rel="stylesheet" href="assets/css/login.css">
 
 </head>
@@ -16,53 +17,71 @@
 
   <script>
 
+    function validation(event) {
 
+      // Prevent form from refreshing
+      event.preventDefault();
 
-    function validation() {
-      var a = document.forms["myform"]["name"].value;
-      var b = 0;
-      if (a == "" || a == null) {
-        alert("Username is Required!")
-      } else {
-        b++
+      var username = document.forms["myform"]["name"].value;
+      var password = document.forms["myform"]["password"].value;
+      var email = document.forms["myform"]["email"].value;
+
+      var valid = true;
+
+      // Username Validation
+      if (username == "" || username == null) {
+        alert("Username is Required!");
+        valid = false;
       }
-      var a = document.forms["myform"]["password"].value
-      if (a == "" || a == null || a.length < 6) {
-        alert("Enter a 6 character Password!")
-      } else {
-        b++
+
+      // Password Validation
+      if (password == "" || password == null || password.length < 6) {
+        alert("Enter a password with at least 6 characters!");
+        valid = false;
       }
-      var a = document.forms["myform"]["email"].value
-      var atpos = a.indexOf("@");
-      var dotpos = a.lastIndexOf(".");
-      if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= a.length) {
-        alert("Enter valid Email address!");
-        return false;
-      } else {
-        b++
+
+      // Email Validation
+      var atpos = email.indexOf("@");
+      var dotpos = email.lastIndexOf(".");
+
+      if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
+        alert("Enter a valid Email address!");
+        valid = false;
       }
-      if (b == 3) {
-        alert(" Validation Succesful", window.location.href = 'home.html');
+
+      // If everything is correct
+      if (valid) {
+
+        alert("Validation Successful!");
+
+        // Redirect to home page
+        window.location.href = "home.html";
       }
+
     }
-
 
   </script>
 
-
-
-
   <div class="container">
-    <div class="center">
-      <h1>Login</h1>
-      <img src="assets/images/logo.jpg" alt="" style="width: 100px; border-radius: 50%; margin-left: 37% ; ">
 
-      <form name="myform" action="" method="POST">
+    <div class="center">
+
+      <h1>Login</h1>
+
+      <img
+        src="assets/images/logo.jpg"
+        alt="Logo"
+        style="width:100px; border-radius:50%; margin-left:37%;"
+      >
+
+      <form name="myform" method="POST">
+
         <div class="txt_field">
           <input type="text" name="name" required>
           <span></span>
           <label>Username</label>
         </div>
+
         <div class="txt_field">
           <input type="password" name="password" required>
           <span></span>
@@ -75,23 +94,28 @@
           <label>Email</label>
         </div>
 
+        <!-- Button -->
+        <input
+          name="submit"
+          type="submit"
+          value="Login"
+          onclick="validation(event)"
+        >
 
-
-
-
-
-        <input name="submit" type="Submit" value="Login" onclick="validation()">
         <div class="signup_link">
-          <a href="terms.html">terms and conditions</a>
+
+          <a href="terms.html">Terms and Conditions</a>
+
           <br>
 
         </div>
 
-
       </form>
+
     </div>
 
   </div>
+
 </body>
 
 </html>
