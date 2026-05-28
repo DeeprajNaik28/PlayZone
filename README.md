@@ -68,4 +68,8 @@ This project is made for educational and demo purposes only.
 
 ## 👨‍💻 Author
 
+<<<<<<< HEAD
 Developed by Deepraj Naik
+=======
+Developed by Deepraj Naik
+>>>>>>> 70cdf817d2d967c79dfb82ca9f8bd784986d72c0
