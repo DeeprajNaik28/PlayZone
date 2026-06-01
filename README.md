@@ -15,6 +15,11 @@ This project includes basic user account and game listings with a clean and inte
 * ⚡ Fast and lightweight frontend project
 
 ---
+# Deployed demo on vercel
+
+https://play-zone-five.vercel.app/home.html
+
+---
 
 ## 🛠️ Technologies Used
 
